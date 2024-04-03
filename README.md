@@ -1,8 +1,10 @@
 # Testes _end-to-end_ com Cypress
 
-👋 Seja bem vindo(a)!
+👋 Olá Analistas, desenvolvedores e recrutadores. Este readme irá apresentar a estrutura deste projeto e2e cypress como portfólio pessoal.
+Meu conhecimento base foi oriundo do curso cypress pela Udemy onde consegui aprender como realizar testes web integrando com pipeline. Espero que vocês gostem ;)
 
-É muito bom tê-lo(a) aqui. Tenho certeza que você vai adorar este curso. ❤️
+* Projeto para fazer os testes automatizados e2e
+  - url dos endpoints utilizados para testes do Scratch: https://notes-serverless-app.com ❤️
 
 ## O que você vai aprender
 
@@ -64,5 +66,5 @@ Run `npm run cy:open:tablet` to open the __Cypress App__ to run tests in interac
 
 ___
 
-Made with ❤️ by [Israel Faioli](https://github.com/israfaioli?tab=repositories).
+Made with ❤️ by [Israel Faioli](https://medium.com/@israfaioli).
 
