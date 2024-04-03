@@ -17,6 +17,8 @@
 import './commands'
 import 'cypress-mailosaur'
 import 'cypress-iframe'
+import registerCypressGrep from '@cypress/grep/src/support'
+registerCypressGrep()
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
