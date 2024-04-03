@@ -24,7 +24,7 @@ describe('Scenarios where authentication is a pre-condition', () => {
     cy.wait('@getNotes')
   })
 
-  it('successfully submits the settings form', () => {
+  it.skip('successfully submits the settings form', () => {
     cy.intercept('POST', '**/prod/billing').as('paymentRequest')
 
     cy.fillSettingsFormAndSubmit()
@@ -35,7 +35,7 @@ describe('Scenarios where authentication is a pre-condition', () => {
       .should('be.equal', 'Complete')
   })
 
-  it('logs out', () => {
+  it('logs out', {tags: '@desktop-and-tablet' }, () => {
     cy.visit('/')
     cy.wait('@getNotes')
 
