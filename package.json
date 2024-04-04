@@ -12,7 +12,7 @@
     "test:tablet": "cypress run --reporter mocha-allure-reporter --config viewportWidth=767,viewportHeight=480 --spec cypress/e2e/authenticated.cy.js",
     "test:cloud": "cypress run --reporter mocha-allure-reporter --record --tag 'desktop'",
     "test:tablet:cloud": "cypress run --reporter mocha-allure-reporter --record --tag 'tablet' --config viewportWidth=767,viewportHeight=480 --spec cypress/e2e/authenticated.cy.js --env grepTags=@desktop-and-tablet,grepOmitFiltered=true",
-    "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report"
+    "report:allure": "allure generate allure-results --clean -o allure-report"
   },
   "keywords": [],
   "author": "",
