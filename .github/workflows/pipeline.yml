@@ -58,6 +58,8 @@ jobs:
     needs: [cypress-tests-desktop, cypress-tests-tablet]
     runs-on: ubuntu-22.04
     steps:
+      - name: Install modules
+        run: npm install
       - name: Generate allure report 
         uses: cypress-io/github-action@v6
         with:
