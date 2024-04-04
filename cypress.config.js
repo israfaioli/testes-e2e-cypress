@@ -1,6 +1,7 @@
 const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
+  projectId: 'px8u21',
   e2e: {
     baseUrl: 'https://notes-serverless-app.com',
     env: {
