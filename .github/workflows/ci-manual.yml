@@ -1,6 +1,6 @@
 # .github/workflows/ci.yml
 
-name: ci
+name: ci-manual
 
 on: workflow_dispatch
 
