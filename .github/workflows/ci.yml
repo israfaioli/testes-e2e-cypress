@@ -1,5 +1,3 @@
-# .github/workflows/ci.yml
-
 name: ci
 
 on:
@@ -34,13 +32,14 @@ jobs:
           CYPRESS_MAILOSAUR_API_KEY: ${{ secrets.CYPRESS_MAILOSAUR_API_KEY }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
         with:
+          #command: npm run test:cloud
           record: true
   cypress-tests-tablet:
     needs: eslint
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Run end-to-end tests on tablet viewport 🧪
         uses: cypress-io/github-action@v6
         env:
@@ -50,4 +49,15 @@ jobs:
           CYPRESS_MAILOSAUR_API_KEY: ${{ secrets.CYPRESS_MAILOSAUR_API_KEY }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
         with:
+          #command: npm run test:tablet:cloud
           record: true
+  #upload-artifact:
+    #needs: [cypress-tests-desktop, cypress-tests-tablet]
+    #runs-on: ubuntu-22.04
+    #steps:
+      #- name: Upload Test Artifacts
+        #uses: actions/upload-artifact@v2
+        #with:
+          #name: cypress-tests-artifacts
+          #path: |
+            #path/to/your/artifacts
