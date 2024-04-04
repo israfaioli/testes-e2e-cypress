@@ -1,6 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"unknown","Thu Apr 04 16:17:29 BRT 2024","Wed Dec 31 21:00:00 BRT 1969","-1712258249013","","Scenarios where authentication is a pre-condition","","Scenarios where authentication is a pre-condition","successfully submits the settings form","successfully submits the settings form",""
-"passed","Thu Apr 04 16:17:49 BRT 2024","Thu Apr 04 16:17:59 BRT 2024","10067","","Login","","Login","successfully logs in","successfully logs in",""
-"passed","Thu Apr 04 16:16:50 BRT 2024","Thu Apr 04 16:17:28 BRT 2024","38612","","Scenarios where authentication is a pre-condition","","Scenarios where authentication is a pre-condition","CRUDs a note","CRUDs a note",""
-"passed","Thu Apr 04 16:18:10 BRT 2024","Thu Apr 04 16:18:24 BRT 2024","13942","","Sign up","","Sign up","successfully signs up using confirmation code sent via email","successfully signs up using confirmation code sent via email",""
-"passed","Thu Apr 04 16:17:29 BRT 2024","Thu Apr 04 16:17:36 BRT 2024","7148","","Scenarios where authentication is a pre-condition","","Scenarios where authentication is a pre-condition","logs out","logs out",""

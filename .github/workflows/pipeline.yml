@@ -37,7 +37,7 @@ jobs:
           record: true  
           command: npm run test:cloud
   cypress-tests-tablet:
-    needs: eslint
+    needs: [eslint, cypress-tests-desktop]
     runs-on: ubuntu-22.04
     strategy:
         fail-fast: false
@@ -53,22 +53,10 @@ jobs:
         with:
           record: true
           command: npm run test:tablet:cloud
-     
-  generate-allure-report:
-    needs: [cypress-tests-desktop, cypress-tests-tablet]
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Install modules
-        run: npm install
       - name: Generate allure report 
         uses: cypress-io/github-action@v6
         with:
-          command: npm run report:allure 
-
-  upload-artifact:
-    needs: [generate-allure-report]
-    runs-on: ubuntu-22.04
-    steps:
+          command: npm run report:allure     
       - name: Upload Test Artifacts
         uses: actions/upload-artifact@v2
         with:
